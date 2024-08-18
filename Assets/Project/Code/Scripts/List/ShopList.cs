@@ -1,48 +1,71 @@
-
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.TerrainTools;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopList : MonoBehaviour
 {
     [SerializeField] private float addItemTime;
+    [SerializeField] private float distanceBetweenText;
 
-    private List<Item> items = new List<Item>();
+    [SerializeField] private GameObject newText;
+
+    private Dictionary<Item.Type, int> items = new Dictionary<Item.Type, int>();
+
     private float currentTime;
 
-    int j = 0;
+    private Vector2 currentPosition;
 
     private void Start()
     {
         currentTime = 0;
-
-        items.Add(GenerateItem());
-        Debug.Log(items[j].type);
-        j++;
+        currentPosition = new Vector2(transform.GetChild(0).localPosition.x, transform.GetChild(0).localPosition.y - distanceBetweenText * 2);
+        GenerateItem();
     }
 
     private void Update()
     {
         currentTime += Time.deltaTime;
-        if(currentTime > addItemTime) 
+        if (currentTime > addItemTime)
         {
-            items.Add(GenerateItem());
-            Debug.Log(items[j].type);
+            GenerateItem();
             currentTime = 0;
-            j++;
         }
     }
 
-    private Item GenerateItem()
+    private void GenerateItem()
     {
-        Item newItem = new Item();
+        Item newItem = Instantiate(new Item());
         newItem.type = (Item.Type)Random.Range(0, (int)Item.Type.Last);
-        for(int i = 0; i<items.Count; i++)
+        Debug.Log(newItem.type);
+
+        int i = 0;
+
+        foreach (var pair in items)
         {
-            if(newItem.type == items[i].type)
+            if (newItem.type == pair.Key)
             {
-                Debug.Log("Se repite");
+                items[newItem.type] += 1;
+                transform.GetChild(i + 1).GetComponent<TextMeshProUGUI>().text = newItem.type.ToString() + "...........x" + items[newItem.type];
+                return;
             }
+            i++;
         }
-        return newItem;
+        items.Add(newItem.type, 1);
+        GenerateText(newItem);
+    }
+
+    private void GenerateText(Item newItem)
+    {
+        GameObject itemText = Instantiate(newText);
+        itemText.transform.SetParent(this.transform, true);
+        itemText.transform.localPosition = new Vector3(currentPosition.x, currentPosition.y, 0);
+        itemText.transform.localScale = Vector3.one;
+
+        itemText.GetComponent<TextMeshProUGUI>().text = newItem.type.ToString() + "...........x" + items[newItem.type];
+
+        currentPosition.y = currentPosition.y - distanceBetweenText;
     }
 }
