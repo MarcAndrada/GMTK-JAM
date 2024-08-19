@@ -110,7 +110,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371570491677542541}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c38532824d7c56d46a3b4897357b54f0, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -156,7 +156,7 @@ Rigidbody:
   m_GameObject: {fileID: 1371570491677542541}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -172,7 +172,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2460600585355451276
 MonoBehaviour:
@@ -187,9 +187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints: []
-  minWaypointDistance: 0
-  speed: 0
-  jumpHeight: 0
+  minWaypointDistance: 0.5
+  speed: 1.5
+  jumpHeight: 2
 --- !u!1 &1609329539695789490
 GameObject:
   m_ObjectHideFlags: 0

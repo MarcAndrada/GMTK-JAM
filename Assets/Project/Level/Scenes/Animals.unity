@@ -2616,18 +2616,6 @@ PrefabInstance:
       value: 155.50748
       objectReference: {fileID: 0}
     - target: {fileID: 2460600585355451276, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: speed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460600585355451276, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: jumpHeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460600585355451276, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: minWaypointDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460600585355451276, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
       propertyPath: wayPoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -2710,18 +2698,6 @@ PrefabInstance:
     - target: {fileID: 4792962287795010408, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -89.98021
-      objectReference: {fileID: 0}
-    - target: {fileID: 4885454040441390019, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4885454040441390019, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4885454040441390019, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: m_Constraints
-      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 5570810263652419731, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
@@ -2883,10 +2859,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 164.73392
       objectReference: {fileID: 0}
-    - target: {fileID: 7991166660101863875, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: c38532824d7c56d46a3b4897357b54f0, type: 2}
     - target: {fileID: 8076711052728622013, guid: fd6c4cee45de3eb4d8ce52e6db7005e7, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.99999994
@@ -2970,10 +2942,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1251076403}
     m_Modifications:
-    - target: {fileID: 1971730296975163730, guid: f67b93b89ddc5ec4b823743d841f8ef8, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 5957480618210500554, guid: f67b93b89ddc5ec4b823743d841f8ef8, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
@@ -3051,10 +3019,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1251076403}
     m_Modifications:
-    - target: {fileID: 2215283750848183750, guid: ce719e9b71eb4e24ebb86b9eb56dc0c4, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 5184353220892835895, guid: ce719e9b71eb4e24ebb86b9eb56dc0c4, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3328,10 +3292,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.00000034452114
       objectReference: {fileID: 0}
-    - target: {fileID: 8689650021569759880, guid: 167c6579c5fb4e5449b05341ea1cfb8e, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 9065784481888008720, guid: 167c6579c5fb4e5449b05341ea1cfb8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -3.2174282
@@ -3417,10 +3377,6 @@ PrefabInstance:
       propertyPath: wayPoints.Array.data[3]
       value: 
       objectReference: {fileID: 81566402}
-    - target: {fileID: 8503289341614241347, guid: e58d5df11255b404cb93d268d24ad847, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
