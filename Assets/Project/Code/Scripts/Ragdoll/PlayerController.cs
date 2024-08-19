@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody root;
     private bool isGrounded;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Movement();
     }
