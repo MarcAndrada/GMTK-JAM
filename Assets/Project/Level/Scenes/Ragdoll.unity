@@ -491,7 +491,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316238}
@@ -638,7 +638,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026152326}
@@ -1208,7 +1208,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026286436}
@@ -1500,7 +1500,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.00002634604}
@@ -3358,7 +3358,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316238}
@@ -7674,7 +7674,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316382}
@@ -7821,7 +7821,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026375987}
@@ -7968,7 +7968,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026197029}
@@ -8115,7 +8115,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316382}
@@ -9718,7 +9718,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026435591}
@@ -9865,7 +9865,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316382}
@@ -10299,7 +10299,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316238}
@@ -11320,7 +11320,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026226831}
@@ -11936,7 +11936,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026197173}
@@ -12241,7 +12241,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026197173}
@@ -12846,7 +12846,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026286436}
@@ -17296,7 +17296,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026137568}
@@ -19012,7 +19012,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026375987}
@@ -19159,7 +19159,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026256777}
@@ -19501,7 +19501,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026197173}
@@ -22388,7 +22388,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026286436}
@@ -23552,7 +23552,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316238}
@@ -27543,7 +27543,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026197029}
@@ -28156,7 +28156,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_Height: 0.25
   m_Direction: 0
   m_Center: {x: -0.03635039, y: -0.065, z: -0.000026316382}
@@ -29128,7 +29128,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!4 &718161392894860492
 Transform:
   m_ObjectHideFlags: 0
@@ -29138,8 +29138,8 @@ Transform:
   m_GameObject: {fileID: 197238469260838518}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.75000066, y: -3.9337156, z: -27.210821}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 100.00001, y: 100.00001, z: 100.00001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 873235166}
   m_RootOrder: -1
@@ -29254,7 +29254,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197238469260838518}
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!33 &5893882005288798235
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29262,7 +29262,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867592068052360452}
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!33 &5893882005300214511
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29270,7 +29270,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867592068040962032}
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!4 &7378195682173208510
 Transform:
   m_ObjectHideFlags: 0
@@ -29280,8 +29280,8 @@ Transform:
   m_GameObject: {fileID: 7867592068052360452}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.71067494, y: -3.9337156, z: -18.61082}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 100.00001, y: 100.00001, z: 100.00001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 873235166}
   m_RootOrder: -1
@@ -29295,8 +29295,8 @@ Transform:
   m_GameObject: {fileID: 7867592068040962032}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.71067494, y: -3.9337156, z: -10.020821}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 100.00001, y: 100.00001, z: 100.00001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 873235166}
   m_RootOrder: -1
@@ -29322,7 +29322,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!64 &7821876302318375164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29344,7 +29344,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 741bb163089d32e4795044148255fe92, type: 3}
+  m_Mesh: {fileID: -462981019419857548, guid: e4e683fea86af64488cf5ae3aa47dd44, type: 3}
 --- !u!1 &7867592068040962032
 GameObject:
   m_ObjectHideFlags: 0
