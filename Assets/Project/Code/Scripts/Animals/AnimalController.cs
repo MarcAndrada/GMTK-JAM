@@ -49,9 +49,9 @@ public class AnimalController : MonoBehaviour
     }
 
 
-    private void Bounce(Vector3 _surfaceNormal)
+    private void Bounce()
     {
-        Vector3 jumpForce = _surfaceNormal * jumpHeight;
+        Vector3 jumpForce = Vector3.up * jumpHeight;
         
 
         Vector3 wayPointNeutralPosition, currentNeutralPosition;
@@ -73,7 +73,7 @@ public class AnimalController : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player"))
         {
-            Bounce(collision.contacts[0].normal);
+            Bounce();
         }
     }
 }
