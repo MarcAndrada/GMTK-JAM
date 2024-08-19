@@ -32,7 +32,7 @@ public class CameraControl : MonoBehaviour
         mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
         mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
 
-        mouseY = Mathf.Clamp(mouseY, -25, 40);
+        mouseY = Mathf.Clamp(mouseY, -40, 60);
 
         Quaternion rotation = Quaternion.Euler(mouseY, mouseX, 0);
         Vector3 desiredPosition = target.position + rotation * offset;
