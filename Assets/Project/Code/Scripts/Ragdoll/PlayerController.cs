@@ -11,71 +11,36 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody root;
     private bool isGrounded;
 
-    private void FixedUpdate()
+    private void Update()
     {
         Movement();
     }
     private void Movement()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            animator.SetBool("isWalking", true);
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                root.AddForce(-transform.up * speed * 1.5f);
-            }
-            else
-            {
-                root.AddForce(-transform.up * speed);
-            }
-        }
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            animator.SetBool("isWalking", false);
-        }
+        ResetMovementAnimations();
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            animator.SetBool("isLeftWalking", true);
-            animator.SetBool("isWalking", false);
-            root.AddForce(-transform.forward * strafeSpeed);
-        }
-        else
-        {
-            animator.SetBool("isLeftWalking", false);
+        // Handle walking forward and backward
+        HandleMovement(KeyCode.W, "isWalking", -transform.up, speed);
+        HandleMovement(KeyCode.S, "isWalking", transform.up, speed);
 
-        }
-
-        if (Input.GetKey(KeyCode.S))
+        // Handle strafing left and right
+        HandleMovement(KeyCode.A, "isLeftWalking", -transform.forward, strafeSpeed);
+        HandleMovement(KeyCode.D, "isRightWalking", transform.forward, strafeSpeed);
+    }
+    private void HandleMovement(KeyCode key, string animationBool, Vector3 direction, float normalSpeed)
+    {
+        if (Input.GetKey(key))
         {
-            animator.SetBool("isWalking", true);
-            root.AddForce(transform.up * speed);
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            animator.SetBool("isWalking", false);
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            animator.SetBool("isRightWalking", true);
-            animator.SetBool("isWalking", false);
-            root.AddForce(transform.forward * strafeSpeed);
-        }
-        else
-        {
-            animator.SetBool("isRightWalking", false);
-        }
-        if (Input.GetAxis("Jump") > 0)
-        {
-            if (isGrounded)
-            {
-                root.AddForce(new Vector3(0, jumpForce, 0));
-                isGrounded = false;
-            }
+            animator.SetBool(animationBool, true);
+            root.AddForce(direction * normalSpeed);
         }
     }
- 
+    void ResetMovementAnimations()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isLeftWalking", false);
+        animator.SetBool("isRightWalking", false);
+    }
     public void SetIsGrounded(bool isGrounded)
     {
         this.isGrounded = isGrounded;
@@ -90,7 +55,6 @@ public class PlayerController : MonoBehaviour
 
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + transform.up * 1);
-
     }
 
 }
