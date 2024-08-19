@@ -8,10 +8,11 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private Transform target;
 
     [SerializeField] private Vector3 offset = new Vector3(0, 2, -5);
-    [SerializeField] private float smoothSpeed = 0.125f; 
+    [SerializeField] private float smoothSpeed = 0.125f;
+    [SerializeField] private float stomachOffset;
 
     [SerializeField] private ConfigurableJoint hipJoint;
-    [SerializeField] private ConfigurableJoint StomachJoint;
+    [SerializeField] private ConfigurableJoint stomachJoint;
 
     private float mouseX;
     private float mouseY;
@@ -41,5 +42,6 @@ public class CameraControl : MonoBehaviour
         transform.LookAt(target.position);
 
         hipJoint.targetRotation = Quaternion.Euler(mouseX, 0, 0);
+        stomachJoint.targetRotation = Quaternion.Euler(0, 0, -mouseY + stomachOffset);
     }
 }

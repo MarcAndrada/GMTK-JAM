@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1506063804}
+    - target: {fileID: 382861208797974707, guid: 3ff75e08ba7adac418bf631f49144c23, type: 3}
+      propertyPath: mouseButtonIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 900798799644150185, guid: 3ff75e08ba7adac418bf631f49144c23, type: 3}
       propertyPath: targetLimb
       value: 
@@ -536,7 +540,7 @@ GameObject:
   - component: {fileID: 804844045}
   - component: {fileID: 804844044}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,7 +746,9 @@ MonoBehaviour:
   target: {fileID: 1225789097}
   offset: {x: 0, y: 2, z: -5}
   smoothSpeed: 0.125
+  stomachOffset: 5
   hipJoint: {fileID: 1369386037}
+  stomachJoint: {fileID: 1980270639}
 --- !u!4 &1205694888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5694816734544514952, guid: fdd345127b263424184a6fe9b5384ce1, type: 3}
@@ -874,4 +880,9 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1695995930830051675, guid: fdd345127b263424184a6fe9b5384ce1, type: 3}
   m_PrefabInstance: {fileID: 1506063803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!153 &1980270639 stripped
+ConfigurableJoint:
+  m_CorrespondingSourceObject: {fileID: 5269390078304284100, guid: 3ff75e08ba7adac418bf631f49144c23, type: 3}
+  m_PrefabInstance: {fileID: 44386278}
   m_PrefabAsset: {fileID: 0}
