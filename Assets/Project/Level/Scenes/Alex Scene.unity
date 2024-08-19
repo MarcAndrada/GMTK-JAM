@@ -1223,6 +1223,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: addItemTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: distanceInitText
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: distanceBetweenText
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: distanceIncreaseShopList
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805568280318599381, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 963194227}
+    - target: {fileID: 2805568280318599381, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805568280318599381, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2829924170557348039, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1237,7 +1265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2829924170557348039, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 316.582
       objectReference: {fileID: 0}
     - target: {fileID: 2829924170557348039, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1289,7 +1317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4820468781915244176, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 316.58
       objectReference: {fileID: 0}
     - target: {fileID: 4820468781915244176, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1400,12 +1428,48 @@ PrefabInstance:
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_margin.z
+      value: 71.33222
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_fontSizeBase
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264144989436560299, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8658571890851858458, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186710596237497657, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186710596237497657, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186710596237497657, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

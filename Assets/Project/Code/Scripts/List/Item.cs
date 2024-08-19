@@ -6,14 +6,27 @@ public class Item : ScriptableObject
 {
     public enum Type
     {
+        Fridge,
+        Mircowave,
+        Toaster,
+        Rice_Cooker,
+        Cofee_Maker,
+        Dishwasher,
+        Cabinets,
+        Waffle_Maker,
+        Portable_Stove,
+        Meat_Grinder,
+        Kettle,
+        Kitchen_Stove,
+        Washing_Machine,
+        Apple,
         Banana,
-        Banana1,
-        Banana2,
-        Banana3,
-        Banana4,
-        Banana5,
-        Banana6,
-        Banana7,
+        Orange,
+        Cat,
+        Pinguin,
+        Elephant,
+        Lobstair,
+        Racoon,
         Last
     }
 

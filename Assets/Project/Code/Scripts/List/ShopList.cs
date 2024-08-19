@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.TerrainTools;
@@ -34,31 +35,42 @@ public class ShopList : MonoBehaviour
         currentTime += Time.deltaTime;
         if (currentTime > addItemTime)
         {
-            GenerateItem();
+            if (items.Count >= Enum.GetValues(typeof(Item.Type)).Length)
+            {
+                return;
+            }
+            else
+            {
+                GenerateItem();
+            }
             currentTime = 0;
         }
     }
 
     private void GenerateItem()
     {
-        Item newItem = Instantiate(new Item());
-        newItem.type = (Item.Type)Random.Range(0, (int)Item.Type.Last);
-        Debug.Log(newItem.type);
+        Item.Type newItemType;
+        bool uniqueItemFound = false;
 
-        int i = 0;
-
-        foreach (var pair in items)
+        for (int attempts = 0; attempts < Enum.GetValues(typeof(Item.Type)).Length; attempts++)
         {
-            if (newItem.type == pair.Key)
+            newItemType = (Item.Type)UnityEngine.Random.Range(0, (int)Item.Type.Last);
+
+            if (!items.ContainsKey(newItemType))
             {
-                items[newItem.type] += 1;
-                transform.GetChild(i + 1).GetComponent<TextMeshProUGUI>().text = newItem.type.ToString() + "...........x" + items[newItem.type];
-                return;
+                uniqueItemFound = true;
+                items.Add(newItemType, 1);
+                Item newItem = new Item { type = newItemType };
+                GenerateText(newItem);
+                break;
             }
-            i++;
         }
-        items.Add(newItem.type, 1);
-        GenerateText(newItem);
+
+        if (!uniqueItemFound)
+        {
+            Debug.Log("Se han generado todos los objetos");
+        }
+
     }
 
     private void GenerateText(Item newItem)
