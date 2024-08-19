@@ -11,6 +11,7 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private float smoothSpeed = 0.125f; 
 
     [SerializeField] private ConfigurableJoint hipJoint;
+    [SerializeField] private ConfigurableJoint StomachJoint;
 
     private float mouseX;
     private float mouseY;
