@@ -24423,10 +24423,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
-      propertyPath: addItemTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586116200392083531, guid: 6fa21353bc907bd46a7a9d61c8c80535, type: 3}
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 632348748}

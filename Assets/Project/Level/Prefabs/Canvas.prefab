@@ -185,13 +185,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90481c868f814714da3af10d748a6559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addItemTime: 2
+  addItemTime: 10
   distanceBetweenText: 20
   distanceInitText: 40
   distanceIncreaseShopList: 0.15
   newText: {fileID: 8169445214906289602, guid: d06d3cb9b47770143a6fcb602e507f67, type: 3}
   shopList: {fileID: 8021383170093771443}
   listGetsBigger: {fileID: 8300000, guid: 33572291eff495548acf84959fb86819, type: 3}
+  levelLoader: {fileID: 0}
 --- !u!1 &8021383170093771443
 GameObject:
   m_ObjectHideFlags: 0

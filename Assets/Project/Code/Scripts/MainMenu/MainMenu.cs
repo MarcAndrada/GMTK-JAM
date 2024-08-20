@@ -8,9 +8,17 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private AudioClip fallGuysSong;
     public LevelLoader levelLoader;
+    AudioSource audioSource;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void GoToGame()
     {
-        AudioManager.instance.Play2dLoop(fallGuysSong, "Music", 1, 1, 1);
+
+        AudioManager.instance.StopLoopSound(audioSource);
+        audioSource = AudioManager.instance.Play2dLoop(fallGuysSong, "Music", 1, 1, 1);
         levelLoader.LoadSpecificLevel(1);
     }
     public void Quit()
