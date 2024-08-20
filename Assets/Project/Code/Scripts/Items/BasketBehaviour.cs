@@ -14,6 +14,9 @@ public class BasketBehaviour : MonoBehaviour
     [SerializeField] 
     private ShopList shopList;
 
+    [SerializeField]
+    private AudioClip itemObtained;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +44,8 @@ public class BasketBehaviour : MonoBehaviour
             }
             ObjectObteined(item);
             item.RestartPos();
+
+            AudioManager.instance.Play2dOneShotSound(itemObtained, "SFX", 1, 0.85f, 1.1f);
         }
     }
 

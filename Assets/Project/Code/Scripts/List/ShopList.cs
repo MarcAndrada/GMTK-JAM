@@ -25,7 +25,9 @@ public class ShopList : MonoBehaviour
     private Vector2 currentPosition;
 
     private bool listFull = false;
-    
+
+    [SerializeField]
+    private AudioClip listGetsBigger;
 
     private void Start()
     {
@@ -73,6 +75,7 @@ public class ShopList : MonoBehaviour
                 items.Add(newItemType, 1);
                 Item newItem = new Item { type = newItemType };
                 GenerateText(newItem);
+                AudioManager.instance.Play2dOneShotSound(listGetsBigger, "SFX", 1, 0.95f, 1.05f);
                 break;
             }
         }
