@@ -25,8 +25,9 @@ public class ItemBehaviour : MonoBehaviour
         
     }
 
-    public void RestartPos()
+    public IEnumerator RestartPos()
     {
+        yield return new WaitForEndOfFrame();
         transform.position = initPosition;
         if (GetComponent<Rigidbody>() != null )
         {

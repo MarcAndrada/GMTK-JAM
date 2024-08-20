@@ -22,21 +22,22 @@ public class BasketBehaviour : MonoBehaviour
         if(collision.tag == "Item")
         {
             ItemBehaviour item = collision.gameObject.GetComponent<ItemBehaviour>();
-            if (leftArmGrab.grabbedObject ==  item.gameObject)
+            if (leftArmGrab.grabbedObject == item.gameObject)
             {
                 leftArmGrab.ReleaseObject();
             }
-            else
+            if (rightArmGrab.grabbedObject == item.gameObject)
             {
                 rightArmGrab.ReleaseObject();
             }
             ObjectObteined(item);
-            item.RestartPos();
+            StartCoroutine(item.RestartPos());
 
             AudioManager.instance.Play2dOneShotSound(itemObtained, "SFX", 1, 0.85f, 1.1f);
         }
     }
 
+    
     private void ObjectObteined(ItemBehaviour item)
     {
         shopList.ItemObtained(item.GetItemType());
