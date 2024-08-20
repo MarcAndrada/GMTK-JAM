@@ -10,7 +10,7 @@ public class Grab : MonoBehaviour
     [SerializeField] private int mouseButtonIndex;
     [SerializeField] private bool alreadyGrabbing;
 
-    private GameObject grabbedObject;
+    public GameObject grabbedObject;
     private FixedJoint grabJoint;
     private bool isHoldingMouse;
     private void Awake()
@@ -57,7 +57,7 @@ public class Grab : MonoBehaviour
             grabJoint.breakForce = 9001;
         }
     }
-    private void ReleaseObject()
+    public void ReleaseObject()
     {
         if (grabJoint != null)
         {
