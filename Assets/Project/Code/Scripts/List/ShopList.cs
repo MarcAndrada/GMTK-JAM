@@ -5,6 +5,7 @@ using TMPro;
 using UnityEditor.TerrainTools;
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShopList : MonoBehaviour
@@ -33,6 +34,8 @@ public class ShopList : MonoBehaviour
 
     [SerializeField]
     private AudioClip listGetsBigger;
+
+    public LevelLoader levelLoader;
 
     private void Start()
     {
@@ -145,7 +148,7 @@ public class ShopList : MonoBehaviour
                 itemsObtained++;
                 if(itemsObtained == itemsGenerated)
                 {
-                    Debug.Log("has ganado");
+                    levelLoader.LoadSpecificLevel(2);
                 }
                 return;
             }

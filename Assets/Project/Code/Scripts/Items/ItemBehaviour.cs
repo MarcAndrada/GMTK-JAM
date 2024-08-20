@@ -27,9 +27,12 @@ public class ItemBehaviour : MonoBehaviour
 
     public void RestartPos()
     {
-        Destroy(gameObject);
-        //transform.position = initPosition;
-        //transform.rotation = initRotation;
+        transform.position = initPosition;
+        if (GetComponent<Rigidbody>() != null )
+        {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
+        transform.rotation = initRotation;
     }
 
     public Item.Type GetItemType()
