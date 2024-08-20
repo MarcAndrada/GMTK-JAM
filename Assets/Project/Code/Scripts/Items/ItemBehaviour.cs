@@ -17,8 +17,6 @@ public class ItemBehaviour : MonoBehaviour
     {
         initPosition = transform.position;
         initRotation = transform.rotation;
-
-        Debug.Log(transform.position);
     }
 
     // Update is called once per frame
