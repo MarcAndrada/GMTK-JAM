@@ -21,17 +21,28 @@ public class ShopList : MonoBehaviour
 
     private float currentTime;
     private float elapsedTime;
+    private float startPosition;
+    private float endPosition;
 
     private Vector2 currentPosition;
 
     private bool listFull = false;
+    private int itemsObtained;
+    private int itemsGenerated;
     
 
     private void Start()
     {
         currentTime = 0;
+        itemsObtained = 0;
+        itemsGenerated = 0;
         currentPosition = new Vector2(transform.GetChild(0).localPosition.x, transform.GetChild(0).localPosition.y - distanceInitText);
-        GenerateItem();
+        for(int i = 0; i<3; i++)
+        {
+            GenerateItem();
+        }
+        startPosition = shopList.transform.localScale.y;
+        endPosition = shopList.transform.localScale.y + distanceIncreaseShopList;
     }
 
     private void Update()
@@ -50,6 +61,8 @@ public class ShopList : MonoBehaviour
             }
             currentTime = 0;
             elapsedTime = 0;
+            startPosition = shopList.transform.localScale.y;
+            endPosition = shopList.transform.localScale.y + distanceIncreaseShopList;
         }
         else if(!listFull && currentTime < addItemTime)
         {
@@ -73,6 +86,7 @@ public class ShopList : MonoBehaviour
                 items.Add(newItemType, 1);
                 Item newItem = new Item { type = newItemType };
                 GenerateText(newItem);
+                itemsGenerated++;
                 break;
             }
         }
@@ -109,9 +123,9 @@ public class ShopList : MonoBehaviour
         {
             coeficient = 1;
         }
-        shopList.transform.localScale = Vector3.Lerp(shopList.transform.localScale,
-        new Vector3(shopList.transform.localScale.x, shopList.transform.localScale.y + distanceIncreaseShopList, shopList.transform.localScale.z),
-        coeficient);
+
+        float endScale = ((1 - coeficient) * startPosition) + (coeficient * (endPosition));
+        shopList.transform.localScale = new Vector3(shopList.transform.localScale.x, endScale, shopList.transform.localScale.z);
 
     }
 
@@ -124,6 +138,11 @@ public class ShopList : MonoBehaviour
             {
                 items[item]--;
                 transform.GetChild(i).GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
+                itemsObtained++;
+                if(itemsObtained == itemsGenerated)
+                {
+                    Debug.Log("has ganado");
+                }
                 return;
             }
             i++;
