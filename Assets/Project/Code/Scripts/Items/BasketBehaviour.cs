@@ -9,7 +9,10 @@ public class BasketBehaviour : MonoBehaviour
     private Grab leftArmGrab;
 
     [SerializeField]
-    private Grab rightArmGrab;  
+    private Grab rightArmGrab;
+
+    [SerializeField] 
+    private ShopList shopList;
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +39,13 @@ public class BasketBehaviour : MonoBehaviour
             {
                 rightArmGrab.ReleaseObject();
             }
-
+            ObjectObteined(item);
             item.RestartPos();
         }
+    }
+
+    private void ObjectObteined(ItemBehaviour item)
+    {
+        shopList.ItemObtained(item.GetItemType());
     }
 }

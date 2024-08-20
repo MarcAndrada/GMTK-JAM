@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEditor.TerrainTools;
 using UnityEditorInternal.Profiling.Memory.Experimental;
@@ -19,8 +20,11 @@ public class ShopList : MonoBehaviour
     private Dictionary<Item.Type, int> items = new Dictionary<Item.Type, int>();
 
     private float currentTime;
+    private float elapsedTime;
 
     private Vector2 currentPosition;
+
+    private bool listFull = false;
     
 
     private void Start()
@@ -33,6 +37,7 @@ public class ShopList : MonoBehaviour
     private void Update()
     {
         currentTime += Time.deltaTime;
+
         if (currentTime > addItemTime)
         {
             if (items.Count >= Enum.GetValues(typeof(Item.Type)).Length)
@@ -44,7 +49,13 @@ public class ShopList : MonoBehaviour
                 GenerateItem();
             }
             currentTime = 0;
+            elapsedTime = 0;
         }
+        else if(!listFull && currentTime < addItemTime)
+        {
+            IncreasingList();
+        }
+
     }
 
     private void GenerateItem()
@@ -68,6 +79,7 @@ public class ShopList : MonoBehaviour
 
         if (!uniqueItemFound)
         {
+            listFull = true;
             Debug.Log("Se han generado todos los objetos");
         }
 
@@ -83,6 +95,38 @@ public class ShopList : MonoBehaviour
         itemText.GetComponent<TextMeshProUGUI>().text = newItem.type.ToString() + "...........x" + items[newItem.type];
 
         currentPosition.y = currentPosition.y - distanceBetweenText;
-        shopList.transform.localScale = new Vector3(shopList.transform.localScale.x, shopList.transform.localScale.y + distanceIncreaseShopList, shopList.transform.localScale.z);
+    }
+
+    private void IncreasingList()
+    {
+        float coeficient;
+        if(elapsedTime < addItemTime)
+        {
+            elapsedTime += Time.deltaTime;
+            coeficient = elapsedTime / addItemTime;
+        }
+        else
+        {
+            coeficient = 1;
+        }
+        shopList.transform.localScale = Vector3.Lerp(shopList.transform.localScale,
+        new Vector3(shopList.transform.localScale.x, shopList.transform.localScale.y + distanceIncreaseShopList, shopList.transform.localScale.z),
+        coeficient);
+
+    }
+
+    public void ItemObtained(Item.Type item)
+    {
+        int i = 1;
+        foreach(var pair in items)
+        {
+            if(pair.Key == item && pair.Value != 0) 
+            {
+                items[item]--;
+                transform.GetChild(i).GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
+                return;
+            }
+            i++;
+        }
     }
 }

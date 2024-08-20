@@ -32,4 +32,9 @@ public class ItemBehaviour : MonoBehaviour
         transform.position = initPosition;
         transform.rotation = initRotation;
     }
+
+    public Item.Type GetItemType()
+    {
+        return itemType;
+    }
 }
