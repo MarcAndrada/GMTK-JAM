@@ -191,6 +191,7 @@ MonoBehaviour:
   distanceIncreaseShopList: 0.1
   newText: {fileID: 8169445214906289602, guid: d06d3cb9b47770143a6fcb602e507f67, type: 3}
   shopList: {fileID: 8021383170093771443}
+  listGetsBigger: {fileID: 8300000, guid: 33572291eff495548acf84959fb86819, type: 3}
 --- !u!1 &8021383170093771443
 GameObject:
   m_ObjectHideFlags: 0

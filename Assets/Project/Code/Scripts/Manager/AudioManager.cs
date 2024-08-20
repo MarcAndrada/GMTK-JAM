@@ -48,6 +48,8 @@ public class AudioManager : MonoBehaviour
             actions3dAS[i].playOnAwake = false;
             actions3dAS[i].outputAudioMixerGroup = mixerGroup;
         }
+
+        DontDestroyOnLoad(this);
     }
 
     public AudioSource GetUnused2dAS() 

@@ -31,6 +31,9 @@ public class ShopList : MonoBehaviour
     private int itemsGenerated;
     
 
+    [SerializeField]
+    private AudioClip listGetsBigger;
+
     private void Start()
     {
         currentTime = 0;
@@ -87,6 +90,7 @@ public class ShopList : MonoBehaviour
                 Item newItem = new Item { type = newItemType };
                 GenerateText(newItem);
                 itemsGenerated++;
+                AudioManager.instance.Play2dOneShotSound(listGetsBigger, "SFX", 1, 0.95f, 1.05f);
                 break;
             }
         }
