@@ -17,21 +17,9 @@ public class BasketBehaviour : MonoBehaviour
     [SerializeField]
     private AudioClip itemObtained;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.collider.tag == "Item")
+        if(collision.tag == "Item")
         {
             ItemBehaviour item = collision.gameObject.GetComponent<ItemBehaviour>();
             if (leftArmGrab.grabbedObject ==  item.gameObject)

@@ -29,8 +29,9 @@ public class ItemBehaviour : MonoBehaviour
 
     public void RestartPos()
     {
-        transform.position = initPosition;
-        transform.rotation = initRotation;
+        Destroy(gameObject);
+        //transform.position = initPosition;
+        //transform.rotation = initRotation;
     }
 
     public Item.Type GetItemType()

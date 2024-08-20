@@ -10,7 +10,7 @@ public class Item : ScriptableObject
         Mircowave,
         Toaster,
         Rice_Cooker,
-        Cofee_Maker,
+        Coffee_Maker,
         Dishwasher,
         Cabinets,
         Waffle_Maker,
@@ -25,7 +25,7 @@ public class Item : ScriptableObject
         Cat,
         Pinguin,
         Elephant,
-        Lobstair,
+        Lobster,
         Racoon,
         Last
     }
